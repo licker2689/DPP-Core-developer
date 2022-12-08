@@ -5,8 +5,8 @@ plugins {
 }
 
 configurations {
-    jar.archiveName = 'DPP-Core-_v1_19-SNAPSHOT.jar'
-    shadowJar.archiveName = 'DPP-Core-_v1_19-SNAPSHOT.jar'
+    jar.archiveName = 'DPP-Core-_v1_19_3-SNAPSHOT.jar'
+    shadowJar.archiveName = 'DPP-Core-_v1_19_3-SNAPSHOT.jar'
 }
 jar {
     finalizedBy shadowJar
@@ -73,7 +73,7 @@ publishing {
         mavenJava(MavenPublication) {
             groupId = 'com.darksoldier1404.dppc'
             artifactId = 'DPP-Core'
-            version = '1.19-SNAPSHOT'
+            version = '1.19.3-SNAPSHOT'
             artifact 'jars/'+ jar.archiveName
         }
     }
@@ -82,7 +82,7 @@ publishing {
     }
 }
 group 'github.com/darksoldier1404'
-version = '2.0.6.67'
+version = '2.0.6.68'
 
 
 compileJava.options.encoding = 'UTF-8'
