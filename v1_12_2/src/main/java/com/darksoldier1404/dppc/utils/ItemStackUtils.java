@@ -13,7 +13,7 @@ public class ItemStackUtils {
     private static final DPPCore plugin = DPPCore.getInstance();
 
     public static ItemStack getPlayerHead(Player p) {
-        ItemStack head = new ItemStack(Material.SKULL_ITEM, 1, (short) SkullType.PLAYER.ordinal());
+        ItemStack head = new ItemStack(Material.LEGACY_SKULL_ITEM, 1, (short) SkullType.PLAYER.ordinal());
         SkullMeta sm = (SkullMeta) head.getItemMeta();
         sm.setOwner(p.getName());
         head.setItemMeta(sm);
